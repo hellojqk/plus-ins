@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+        body {
+            width: 300px;
+            height: 100px;
+        }
+
+        a {
+            margin-right: 10px;
+        }
+
+        label {
+            cursor: pointer;
+        }
+
+        .head {
+            width: 100%;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            float: left;
+            width: 49%;
+            position: relative;
+        }
+
+        .login {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <h2>数据中心辅助插件</h2>
+    </div>
+    <div class="login">hello,<label id="user_name"></label></div>
+    <div class="notlogin">please<button id="btn_login">登录</button></div>
+    <div>
+        <ul style="-webkit-padding-start:0px;" id="setting_list">
+            <li><input type="checkbox" id="get_list"><label for="get_list">自动识别列表页</label></li>
+            <li><input type="checkbox" id="get_list_next"><label for="get_list_next">列表页自动翻页</label></li>
+            <li><input type="checkbox" id="get_detail"><label for="get_detail">自动采集商品详情</label></li>
+
+            <li><input type="checkbox" id="get_open_tb"><label for="get_open_tb">采集淘宝开放平台</label></li>
+        </u>
+    </div>
+</body>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/popup.js"></script>
+
+</html>
